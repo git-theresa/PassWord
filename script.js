@@ -2,8 +2,11 @@
 // Dom elements
 var passwordText = document.querySelector("#password");
 var generateBtn = document.querySelector("#generate");
+var upperCase = ("A, B, C, D, E, F, G, H, I ,J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, X, Z");
+
+
 // // // Event button
-generateBtn.addEventListener("click", () =>{
+generateBtn.addEventListener("click", function(event) {
     var length = prompt
     ("Choose your password length. At least 8  no more than 128 characters");
     var lowerCase = confirm
