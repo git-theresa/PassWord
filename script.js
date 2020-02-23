@@ -11,6 +11,7 @@ console.log(characters)
 var numeric = ["0, 1, 2, 3, 4, 5, 6, 7, 8, 9,"];
 numeric.sort();
 console.log(numeric.length);
+var length = ("8" <= "128");
 
 
 // Assignment Code
@@ -27,81 +28,60 @@ var randomFunc = {
     upperLetter: upperCase,
     numeric: numeric,
     characters: characters
-};
-
-// Functions, CharCode (http://net-comber.com/charset.html)
-function lowerCase(){
-return String.fromCharCode (Math.floor(Math.random() * 26) + 97);
-}
-console.log(lowerCase);
-
-function UpperCase(){
-    return String.fromCharCode (Math.floor(Math.random() * 26) + 65);
-    }
-console.log(upperCase);
-
-function numeric(){
-    return String.fromCharCode (Math.floor(Math.random() * 10) + 48);
-    }
-
-function characters(){
-    return String.fromCharCode (Math.floor(Math.random() * 15) + 33);
-    }
-
-
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
-
-}
-btn.addEventListener("click", function(event) {
-     var length = prompt
-    ("Choose your password length. At least 8 no more than 128 characters");
-    var lowerCase = prompt
-    ("Do you want Lowercase?");
-    var upperCase = prompt
-    ("Do you want Uppercase?");
-    var numeric = prompt
-    ("Do you want Numbers?");
-    var characters = prompt
-    ("Do you want Special Characters?");
    
-});
-
-
-
-// // // Event button var length = prompt
-document.getElementById("generate").addEventListener("click", function randomFunc() {return this.lowerCase + " " + this.characters; 
-document.getElementById("generate")
+};
+//  / Write password to the #password input   
+var passwordText = document.querySelector("#password"); 
   
-    ("Choose your password length. At least 8  no more than 128 characters");
-    var lowerCase = confirm
-    ("Do you want Lower case?");
-    var upperCase = confirm
-    ("Do you want Upper case?");
-    var numeric = confirm
-    ("Do you want Numbers?");
-    var special = confirm
-    ("Do you want Special Characters?");
+passwordText.value = password;
 
-});
-
-
-  console.log(randomFunc);
+function writePassword() {
+    writePassword=randomFunc;
+}
   // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+// Functions, CharCode (http://net-comber.com/charset.html)
+
+btn.addEventListener("click", function() {
+     var length = prompt(
+    ("Choose your password length. At least 8 no more than 128 characters"));
+    if(length === true) {
+        confirm ("Do you want Lower Case Letters?");
+    }
+    else {
+     (prompt("Please try again"));
+    }
+    var lowerCase = prompt 
+    ("Do you want lower case?");
+    if (confirm === true) { 
+        return String.fromCharCode (Math.floor(Math.random() * 26) + 97);
+    } 
+    else {
+        (confirm ("Do you want Upper Case Letters?"));
+    }
+    upperCase = prompt
+   if (confirm === true) { return String.fromCharCode (Math.floor(Math.random() * 26) + 65);
+   }
+   else {
+       (prompt("Do you want Numbers?"));
+   }
+
+   if (confirm(numbers === true)) {
+    return String.fromCharCode (Math.floor(Math.random() * 10) + 48);
+   }
+   else {
+       (confirm ("Do you want special characters?"));
+   }
+   
+   if (characters === true) {
+    return String.fromCharCode (Math.floor(Math.random() * 15) + 33);
+   }
+   else {
+    return randomFunc();
+    }
+});
 
 
-
-
-
-
-
-
-
-
-
+   
+   
+    
