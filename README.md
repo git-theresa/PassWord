@@ -7,7 +7,8 @@ https://git-theresa.github.io/
 * HTML
 * CSS
 * Bootstrap
-*JavaScript
+* JavaScript
+
 # About
 This is how I generated a password using an external JavaScript file. The password is generated through a series of answered prompts from the user of this application. 
 # License
