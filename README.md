@@ -3,6 +3,7 @@
 https://git-theresa.github.io/
 # Contributor
 @git-theresa
+@chaalexander
 # Tecnology Stack
 * HTML
 * CSS
@@ -10,7 +11,8 @@ https://git-theresa.github.io/
 * JavaScript
 
 # About
-This is how I generated a password using an external JavaScript file. The password is generated through a series of answered prompts from the user of this application. 
+This is how I generated a random password using an external JavaScript file. The password is generated through a series of answered prompts from the user of this application. 
+
 # License
 MIT
 # Contact
