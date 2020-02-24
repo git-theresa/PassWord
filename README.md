@@ -1,6 +1,7 @@
 # PassWord Generator
 # Live Link 
-https://git-theresa.github.io/
+https://git-theresa.github.io/PassWord/
+
 # Contributor
 @git-theresa
 @chaalexander
@@ -17,5 +18,5 @@ This is how I generated a random password using an external JavaScript file. The
 MIT
 # Contact
 * Name: Theresa Eatherly [@git-theresa](@git-theresa)
-* Webpage: https://git-theresa.github.io/Portfolio/
+* Webpage: https://github.com/git-theresa/PassWord
 * e-mail: [t.eatherly@gmail.com](t.eatherly@gmail.com)
