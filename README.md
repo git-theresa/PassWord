@@ -3,6 +3,7 @@
 https://git-theresa.github.io/
 # Contributor
 @git-theresa
+@chaalexander
 # Tecnology Stack
 * HTML
 * CSS
