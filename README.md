@@ -3,8 +3,9 @@
 https://git-theresa.github.io/PassWord/
 
 # Contributor
-@git-theresa
-@chaalexander
+* @git-theresa
+* @chaalexander
+
 # Tecnology Stack
 * HTML
 * CSS
