@@ -1,26 +1,24 @@
 // !DOM ELEMENTS
 var generateBtn = document.querySelector("#generate");
-var lowerValue;
+var lengthValue; 
 var upperValue;
+var lowerValue;
 var numberValue;
 var specialValue;
-var lengthValue;
 
-
-
+// Grabbing from .html page
 function writePassword() {
-var password = generatePassword();
+  var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
 }
-
+// As soon as user clicks button
 function generatePassword() {
-var pswdLength = prompt("How many characters in your password? Please choose between 8-128");
-var passwordGen = [];
+  var pswdLength = prompt("Choose the lenth of your password. Please choose between 8-128");
+  var passwordGen = [];
     
-if (pswdLength >= 8 && pswdLength <= 128) {
+  if (pswdLength >= 8 && pswdLength <= 128) {
     lengthValue = parseInt(pswdLength);
-
     var upperCase = confirm("Do you want UpperCase letters?");
     var lowerCase = confirm("Do you want lowerCase letters?");
     var numberS = confirm("Do you want Numbers?");
@@ -30,12 +28,12 @@ if (pswdLength >= 8 && pswdLength <= 128) {
     alert("Please choose between 8 and 128");
   }
 
-    if (upperCase===true) {
+  if (upperCase===true) {
       upperValue = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
         for (var i = 0; i < upperValue.length; i++) {
           passwordGen.push(upperValue[i]);
-      }
     }
+  }
 
       if (lowerCase===true) {
       lowerValue = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -58,7 +56,7 @@ if (pswdLength >= 8 && pswdLength <= 128) {
       }
     }
    
-//  Generate New Password   
+//  Generate New Password with each confirm
  
   var newPassword = ""
   for(var i = 0; i < lengthValue; i++){
